@@ -1,0 +1,238 @@
+/* CSS reset */
+*{
+margin: 0;
+padding: 0;
+}
+
+/* CSS Variables */
+:root{
+--navbar-height:59px;
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 0px;
+}
+/* logo nd image */
+#logo{
+    height: 150px;
+
+
+}
+#logo img{
+    height: 150px;
+    width: 322px;
+    margin: -4px -45px;
+}
+
+/* list& styling */
+
+#navbar ul{
+    display: flex;
+    font-size: 1.5rem;
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+#navbar ul li{
+list-style: none;
+font-style: 1.3rem;
+    /* margin: 12px 15px; */
+}
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px ;
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+    color: black;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px ;
+    text-decoration: none;
+background-color: white;
+}
+
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 812px;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Cabin', sans-serif;
+}
+#home::before{
+    content: "";
+    background: url('../pexels-rajesh-tp-1603899.jpg') no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height:100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+}
+
+#home h1{
+    color: white;
+    text-align: center;
+
+}
+#home p{
+    color: white;
+    text-align: center;
+font-size: 1.5rem;
+}
+/* Services Section  */
+
+#services{
+margin: 34px;
+
+border-radius: 20px;
+
+
+display: flex;
+}
+
+#services .box img{
+    height: 160px;
+    margin: auto;
+    display: block;
+    
+}
+
+#services .box{
+    border: 2px solid brown;  
+    border-radius: 20px;
+    padding: 30px;
+    margin: -1px 6px;
+    background-color: rgb(255, 249, 249);
+}
+/* Clients Section */
+#client-section{
+    font-size: 3.8rem;
+height: 99px;
+}
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url('../food.bg.jpeg')no-repeat center center/cover;
+    width: 100%;
+    height: 28%;
+    z-index: -1;
+    opacity: 0.4;
+   
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.client-item1{
+padding: 34px;
+
+
+}
+.client-item2{
+    padding: 34px;
+    
+    
+    }
+    .client-item3{
+        padding: 23px;
+        
+        
+    }       
+    .client-item1 img{
+    height: 110px;
+
+}
+.client-item2 img{
+    height: 90px;
+
+}
+.client-item3 img{
+    height: 123px;
+
+}
+
+/* Utility Class */
+.h-primary{
+
+   font-size:3.8rem;
+padding :12px;
+   
+}
+.h-secondary{
+font-size: 2 .8rem;
+padding:12px ;
+
+
+}
+.btn{
+    padding: 6px 22px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.center{
+    text-align: center;
+}
+
+/* Contact Section */
+#contact{
+position: relative;
+    margin: 164px 4px;
+}
+ #contact::before{
+    content: "";
+position: absolute;
+width: 100%;
+height: 138%;
+z-index: -1;
+opacity: 0.7;
+background: url('../contact.jpg') no-repeat center center/cover;
+
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+}
+#contact-box form{
+    width: 40%;
+}
+
+#contact-box label{
+    font-size: 1.3rem;
+    font-family: sans-serif;
+}
+footer{
+    background-color: black;
+    color: white;
+    padding: 9px 20px;
+}
